@@ -4,10 +4,16 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
-#include <sys/dir.h> 
+#include <sys/dir.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 #include <errno.h>
 #include <unistd.h>
 #include <stdbool.h>
+#include <string.h>
+#include <dirent.h>
+#define SIZE 1024
+
 // check whether the given file has ".txt" extension
 bool has_txt_extension(char const *name);
 // read content from the given file name and write to stdout
@@ -79,7 +85,6 @@ void readFileAndOutput(char *file_name) {
 	} while (len > 0);
 
 	close(fd);
-	return 0;
 }
 bool has_txt_extension(char const *name) {
     size_t len = strlen(name);
