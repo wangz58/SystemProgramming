@@ -25,7 +25,7 @@ int main(int argc, char const *argv[]) {
         exit(1);
     }
     // open the directory
-    DIR *dirptr=opendir(argv[1]);
+    DIR *dirptr = opendir(argv[1]);
     if (dirptr == NULL) {
         printf("directory open failed.\n");
         exit(1);
