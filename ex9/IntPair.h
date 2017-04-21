@@ -4,7 +4,7 @@
 class IntPair {
   public:
     IntPair(const int x, const int y);  // constructor
-    void get(int *x_out, int *y_out) const; // member function
+    void get(int *const x_out, int *const y_out) const; // member function
     void set(const int x, const int y);  // member function
 
   private:

@@ -5,7 +5,7 @@ IntPair::IntPair(const int x, const int y) {
   this->y_ = y;  // this-> is optional, unless names conflict
 }
 
-int IntPair::get(int *const x_out, int *const y_out) const {
+void IntPair::get(int *const x_out, int *const y_out) const {
   *x_out = this->x_;
   *y_out = this->y_;
 }
