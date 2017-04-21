@@ -1,4 +1,3 @@
-#include <cmath>
 #include "IntPair.h"
 
 IntPair::IntPair(const int x, const int y) {
