@@ -3,7 +3,6 @@
 
 #include <iostream>
 
-namespace vector333 {
 class Vector {
  public:
   Vector(const float x, const float y, const float z);
@@ -26,6 +25,5 @@ class Vector {
   float y_;
   float z_;
 };
-}
 
 #endif
