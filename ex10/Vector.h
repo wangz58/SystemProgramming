@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-namespace vector333
+namespace vector333 {
 class Vector {
  public:
   Vector(const float x, const float y, const float z);
