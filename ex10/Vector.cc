@@ -1,3 +1,7 @@
+// Copyright [2017] wangz58
+// Zhixing Wang
+// 1333101
+// wangz58@uw.edu
 #include "Vector.h"
 #include <iostream>
 #include <cstdlib>
@@ -7,8 +11,7 @@ Vector::Vector(const float x, const float y, const float z) {
   y_ = y;
   z_ = z;
 }
-Vector::Vector() {
-  Vector(0.0, 0.0, 0.0);
+Vector::Vector() : Vector(0.0, 0.0, 0.0) {
 }
 Vector::Vector(const Vector &other) {
   Vector();
@@ -18,7 +21,7 @@ Vector::Vector(const Vector &other) {
 }
 Vector::~Vector() {}
 Vector & Vector::operator=(const Vector &other) {
-  if(this != &other) {
+  if (this != &other) {
     x_ = other.x_;
     y_ = other.y_;
     z_ = other.z_;

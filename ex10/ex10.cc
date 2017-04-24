@@ -1,3 +1,7 @@
+// Copyright [2017] wangz58
+// Zhixing Wang
+// 1333101
+// wangz58@uw.edu
 #include "Vector.h"
 #include <iostream>
 using namespace std;
