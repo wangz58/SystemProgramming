@@ -7,8 +7,7 @@ Vector::Vector(const float x, const float y, const float z) {
   y_ = y;
   z_ = z;
 }
-Vector::Vector() {
-  Vector(0.0, 0.0, 0.0);
+Vector::Vector() : Vector(0.0, 0.0, 0.0) {  
 }
 Vector::Vector(const Vector &other) {
   Vector();
