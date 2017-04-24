@@ -1,0 +1,31 @@
+#ifndef _VECTOR_H_
+#define _VECTOR_H_
+
+#include <iostream>
+
+namespace vector333
+class Vector {
+ public:
+  Vector(const float x, const float y, const float z);
+  Vector();
+  Vector(const Vector &other);
+  
+  ~Vector();
+
+  Vector & operator=(const Vector &other);
+
+  Vector operator+(const Vector &other) const;
+  Vector operator-(const Vector &other) const;
+
+  float operator*(const Vector &other) const;
+  Vector operator*(const float &num) const;
+
+  friend std::ostream &operator<<(std::ostream &out, const Vector &v);
+ private:
+  float x_;
+  float y_;
+  float z_;
+};
+}
+
+#endif

@@ -18,9 +18,9 @@ int main(int argc, char const *argv[]) {
   p.get(&tmp_x, &tmp_y);
   // output results
   if (tmp_x != 1 && tmp_y != 2) {
-  	std::cout << "Is pass by value" << std::endl; 
+    std::cout << "Is pass by value" << std::endl;
   } else {
-  	std::cout << "Is pass by reference" << std::endl; 
+    std::cout << "Is pass by reference" << std::endl;
   }
   return EXIT_SUCCESS;
 }
