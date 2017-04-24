@@ -38,6 +38,6 @@ Vector Vector::operator*(const float &num) const {
 return Vector(x_ * num, y_ * num, z_ * num);
 }
 std::ostream &operator<<(std::ostream &out, const Vector &v) {
-	out << "(" << x_ << "," << y_ << "," << z_ << ")";
+	out << "(" << v.x_ << "," << v.y_ << "," << v.z_ << ")";
 	return out;
 }
