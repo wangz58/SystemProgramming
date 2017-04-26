@@ -5,11 +5,10 @@
 #include "Vector.h"
 #include <iostream>
 #include <cstdlib>
-#include <iostream>
 #include "./Vector.h"
 
 namespace vector333 {
-Vector::Vector() : Vector(0.0, 0.0, 0.0){
+Vector::Vector() : Vector(0.0, 0.0, 0.0) {
 }
 
 Vector::Vector(const double x, const double y, const double z) {
@@ -19,7 +18,7 @@ Vector::Vector(const double x, const double y, const double z) {
   values_[2] = z;
 }
 
-Vector::Vector(const Vector &v) : Vector(v.values_[0], v.values_[1], v.values_[2]){
+Vector::Vector(const Vector &v) : Vector(v.values_[0], v.values_[1], v.values_[2]) {
 }
 
 Vector::~Vector() {
